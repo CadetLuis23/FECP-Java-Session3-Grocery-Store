@@ -1,6 +1,7 @@
-### Luis Maverick Gabriel
+# Luis Maverick Gabriel
 ## Lab 1: Part 1 of 2 Grocery Store Inventory System
 
+## Output
 ### Check Inventory (Empty)
 ![img.png](img.png)
 
@@ -26,3 +27,10 @@
 
 ### Exit Program
 ![img_8.png](img_8.png)
+
+## Unit Test
+### Unit Test Output
+![img_9.png](img_9.png)
+
+### Unit Test Coverage
+![img_10.png](img_10.png)

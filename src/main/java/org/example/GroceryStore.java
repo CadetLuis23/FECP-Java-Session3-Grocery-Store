@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.List;
 
 public class GroceryStore {
-    private HashMap<String, Integer> products;
+    private final HashMap<String, Integer> products;
 
     public GroceryStore () {
         products = new HashMap<>();
@@ -13,7 +13,6 @@ public class GroceryStore {
 
     public HashMap.Entry<String, Integer> addProduct (String productName, Integer productQuantity) {
         if (productName.isBlank() || productQuantity < 0) return null;
-        if (checkProduct(productName) != null) return null;
         products.put(productName, productQuantity);
         return products.entrySet().stream().filter(e -> e.getKey().equalsIgnoreCase(productName)).toList().getFirst();
     }
